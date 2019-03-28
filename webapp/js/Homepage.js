@@ -1,3 +1,1 @@
-$('.menu .item')
-  .tab()
-;
+$('.menu .item').tab();
