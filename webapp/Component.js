@@ -1,3 +1,6 @@
+jQuery.sap.registerModulePath("jquery.jq", "jQuery/jquery-3.1.1.min.js");
+jQuery.sap.registerModulePath("semantic/se", "css/semantic/semantic.min.js");
+
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",

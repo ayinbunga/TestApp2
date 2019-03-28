@@ -1,19 +1,48 @@
 <template data-controller-name="ta2.TestApp2.controller.Homepage">
 	<div data-sap-ui-type="sap.m.App">
 		<div data-sap-ui-type="sap.m.Page" data-title="{i18n>title}">
-			<div data-sap-ui-aggregation="content" align="center" width="100%">
-				<table border="1" style="text-align: center;" width="100%">
-					<tr>
-						<th>Table Header</th>
-					</tr>
-					<tr>
-						<td>Table Row 1</td>
-					</tr>
-					<tr>
-						<td>Table Row 2</td>
-					</tr>
-				</table>
+			<div data-sap-ui-aggregation="content">
+				<div  align="center" width="100%" class="padding10">
+					<div class="ui top attached tabular menu" id="menu">
+					  <a class="active item" data-tab="first">First</a>
+					  <a class="item" data-tab="second">Second</a>
+					  <a class="item" data-tab="third">Third</a>
+					</div>
+					<div class="ui bottom attached active tab segment" data-tab="first">
+					  <input id="testname" value="test"/>
+					  <div class="ui card">
+					  <div class="image">
+					    <img src="./images/avatar/kristy.png">
+					  </div>
+					  <div class="content">
+					    <a class="header">Kristy</a>
+					    <div class="meta">
+					      <span class="date">Joined in 2013</span>
+					    </div>
+					    <div class="description">
+					      Kristy is an art director living in New York.
+					    </div>
+					  </div>
+					  <div class="extra content">
+					    <a>
+					      <i class="user icon"></i>
+					      22 Friends
+					    </a>
+					  </div>
+					</div>
+					</div>
+					<div class="ui bottom attached tab segment" data-tab="second">
+					  Second
+					</div>
+					<div class="ui bottom attached tab segment" data-tab="third">
+					  Third
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+	$("#testname").value = "Harnasyrin";
+	//document.getElementById("testname").value = "Harnasyrin";
+</script>
 </template>

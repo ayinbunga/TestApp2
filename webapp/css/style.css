@@ -1,1 +1,6 @@
 /* Enter your custom styles here */
+
+.padding10 {
+	padding: 10px;
+	background: grey;
+}
